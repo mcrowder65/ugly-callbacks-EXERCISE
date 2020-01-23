@@ -81,6 +81,11 @@ function getDogBreeds() {
   })
 }
 
+function getHamsters() {
+  return sleep(0).then(() => {
+    return hamsters
+  })
+}
 function getBestPet(dog, cat, hamster) {
   return sleep(0).then(() => {
     if (dog === "Not Found" || !dog || !dogs.find(d => d.name === dog)) {
@@ -106,5 +111,6 @@ function getBestPet(dog, cat, hamster) {
 module.exports = {
   getDogBreeds,
   getCatBreeds,
-  getBestPet
+  getBestPet,
+  getHamsters
 }
