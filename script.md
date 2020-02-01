@@ -1,14 +1,14 @@
-Alright! I think we've been having a little too much fun with all of these dogs and cats.
+Welcome back friends! Let's do an exercise to help reinforce some learning
 
-In order to have even more fun, we're going to introduce breeds of hamsters!
+I added a `getHamster` method here, it works exactly the same as the getDog
+and getCat methods. Except it returns a hamster.
 
-Another function has been written that will return you a list of hamsters.
+Your instructions for this exercise are to first
 
-Your instructions for this exercise are to first,
+// Use the getHamster method to determine what the best pet is among the
+// cat, dog, and hamster that you have found in the your respective lists
+// using utilities.getBestPet(dog, cat, hamster)
 
-// Create a getHamster function that takes in a breed, and returns the breed
-// if it's found in the result of utilities.getHamsters, if it's not found, then
-// it returns "Not Found"
-// Then, use the result of getHamster and determine what the best pet is among the 
-// cat, dog, and hamster that you have found in the list using utilities.getBestPet(dog, cat, hamster)
+The link for the codesandbox can be found in the notes below.
 
+Good luck!

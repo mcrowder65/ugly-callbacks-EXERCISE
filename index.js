@@ -24,6 +24,16 @@ function getCat(breed) {
     .then(getBreed(breed))
 }
 
+function getHamster(breed) {
+  return utilities
+    .getHamsters()
+    .then(getNames)
+    .then(getBreed(breed))
+}
+// Use the getHamster method to determine what the best pet is among the
+// cat, dog, and hamster that you have found in the your respective lists
+// using utilities.getBestPet(dog, cat, hamster)
+
 getDog("Corgi")
   .then(dog => {
     return getCat("Russian Blue").then(cat => {
@@ -31,10 +41,3 @@ getDog("Corgi")
     })
   })
   .then(console.log)
-
-// Create a getHamster function that takes in a breed, and returns the breed
-// if it's found in the result of utilities.getHamsters, if it's not found, then
-// it returns "Not Found"
-// Then, use the result of getHamster and determine what the best pet is among the
-// cat, dog, and hamster that you have found in the your respective lists
-// using utilities.getBestPet(dog, cat, hamster)
